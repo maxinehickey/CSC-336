@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Stars Hollow Community Board</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--makes the page responsive-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> <!--font imported-->
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="snow"></div>
+    <div class="board-layout">
+   
+        <div class="left">
+          <div class="board-text">Let's make Stars Hollow a better place!</div>
+         
+        </div>
+       
+      <div id='boardlists' class="board-lists">
+        <div id='list1' class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)"> <!--cards to list issues that citizens submitted that they want addressed for the town-->
+          <div class="list-title">
+            What do you want changed in our community? (anonymous)
+          </div>
+          
+            <div  id='card1' class="card" draggable="true" ondragstart="dragStart(event)">
+              Clean up pickle juice spill
+            </div>
+            <div  id='card2' class="card" draggable="true" ondragstart="dragStart(event)">
+              Make Main St 20 mph
+            </div>
+            <div id='card3' class="card" draggable="true" ondragstart="dragStart(event)">
+            Vote on best snowman
+            </div>
+            <div id='card4' class="card" draggable="true" ondragstart="dragStart(event)">
+            Luke and Lorelai shouldn't date
+            </div>
+            <div id='card5' class="card" draggable="true" ondragstart="dragStart(event)">
+            Rename streets to their historic names
+            </div>
+         
+        </div>
+        <div  id='list2' class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)"> <!--cards to list the department for the corresponding issue-->
+          <div  class="list-title">
+            Which department(s) does this need to go through?
+          </div>
+          <div  id='card6' class="card" draggable="true" ondragstart="dragStart(event)">
+            Board of Public Works
+            </div>
+            <div  id='card7' class="card" draggable="true" ondragstart="dragStart(event)">
+              Highway Department
+            </div>
+            <div id='card8' class="card" draggable="true" ondragstart="dragStart(event)">
+            Treasury
+            </div>
+            <div id='card9' class="card" draggable="true" ondragstart="dragStart(event)">
+            Town Counsel
+            </div>
+            <div id='card10' class="card" draggable="true" ondragstart="dragStart(event)">
+            Council on Aging
+            </div>
+          
+        </div>
+        <div  id='list3' class="board-list"  ondrop="dropIt(event)" ondragover="allowDrop(event)"> <!--cards to show what's been changed in the town thanks to this website-->
+          <div  class="list-title">
+            Completed projects
+            </div>
+            <div id='card11' class="card" draggable="true" ondragstart="dragStart(event)">
+              Taylor's Olde Fashioned Soda Shoppe
+              <img src="taylors.jpeg" alt="Taylor's Olde Fashioned Soda Shoppe Logo"style="width:230px;height:230px;"></img> <!--sorry for the back picture google doesn't have good ones--> 
+                </div>
+             
+            </div>
+            <div id='list4' class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)"> <!--cards to promote local businesses and business people-->
+              <div class="list-title">
+                Support our community!
+              </div>
+              
+                <div  id='card12' class="card" draggable="true" ondragstart="dragStart(event)">
+                  <img src="lukes.png" alt="Luke's Diner Logo"style="width:240px;height:240px;"></img><br>
+                Luke's Diner (Luke Danes)
+                </div>
+                <div  id='card13' class="card" draggable="true" ondragstart="dragStart(event)">
+                  <img src="misspattys.png" alt="Miss Patty's School of Ballet Logo"style="width:240px;height:240px;"></img><br>
+                Miss Patty's School of Ballet (Patricia LaCosta)
+                </div>
+                <div id='card14' class="card" draggable="true" ondragstart="dragStart(event)">
+                  <img src="ooober.png" alt="OOOBER Logo"style="width:240px;height:240px;"></img><br>
+                OOOBER (Kirk Gleason)
+                </div>
+             
+            </div>
+
+            <div id='list4' class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+              <div class="list-title">
+                Upcoming Town Events
+              </div>
+                <div  id='card15' class="card" draggable="true" ondragstart="dragStart(event)"> <!--one big card to list town events-->
+                  Nov. 24 Thanksgiving (Luke's is open, everything else is closed)
+                  <br>
+                  <br>
+                  Nov. 27 Battle of Stars Hollow Reenactment
+                  <br>
+                  <br>
+                  Nov. 30 Luke's Dark Day (Luke's is closed)
+                  <br>
+                  <br>
+                  Dec. 1 Town Meeting (8 p.m.)
+                  <br>
+                  <br>
+                  Dec. 3 Stars Hollow Winter Carnival
+                  <br>
+                  <br>
+                  Dec. 8 Town Meeting (8 p.m.)
+                  <br>
+                  <br>
+                  Dec. 15 Town Meeting (8 p.m.)
+                  <br>
+                  <br>
+                  Dec. 17 24-hour dance marathon (more details to come at town meeting)
+                  <br>
+                  <br>
+                  Dec. 1 Town Meeting (8 p.m.)
+                  <br>
+                  <br>
+                  Dec. 22 Rory comes back from Yale
+                  <br>
+                  <br>
+                  Dec. 25 Christmas (Luke's is open, everything else is closed)
+                  <br>
+                  <br>
+                  Jan. 1 New Year's Day (Happy 2023!!)
+                  <br>
+                  <br>
+                  Jan. 15 The Bracebridge Dinner
+                  <br>
+                  <br>
+                  TBA Feb. Firelight Festival
+                
+                </div>
+                
+             
+            </div>
+      </div>
+    </div><script src='dragdropswap.js'></script></body>
+</html>

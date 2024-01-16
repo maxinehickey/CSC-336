@@ -1,0 +1,27 @@
+body {
+	background: #F7F7F2;
+	/* padding: 10px; */
+    text-align:center;
+}
+
+table {
+	border-collapse: collapse;
+    /* padding-bottom: 1in; */
+}
+div{
+    height: 5em;
+    width: 5em;
+}
+.purple{
+    background-color: #DCD6F7;
+
+}
+.orange{
+    background-color: #FFC49B;
+}
+td {
+    width: 6em; height: 6em;
+}
+img{
+    width: 5em; height: 5em;
+}

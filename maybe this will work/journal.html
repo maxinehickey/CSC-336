@@ -1,0 +1,99 @@
+<!--I referenced this codepen (https://codepen.io/mh0168a/pen/WNJgMgb) to help me with the js and the project overall-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- This is where it makes the display liquid I think -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- This is where it makes the display liquid I think -->
+    <link rel="stylesheet" href="main.css" /> <!-- Links the CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> <!-- This is the font that is imported from Google fonts -->
+    <title>Victoria's Journal</title> <!--This is the title of the tab-->
+  </head>
+
+  <body>
+    <div id = "topBox"> <!--this is a div for the top/title box of the website-->
+		  <h1 class = "title">Victoria's Journal</h1> <!-- title and subtitle that was given with the project-->
+		  <h2 class = "subtitle">So fresh and so clean</h2>
+	  </div>
+
+    <div class="entries"> <!--created a new div with the journal entries that were preovided with the project-->
+		<h2><span class="date">04/09/08:</span> Spatulas</h2>
+		<p>
+			<img class="pictures" src="https://static.vecteezy.com/system/resources/previews/008/290/244/original/flippers-spatula-illustration-isoalted-on-white-background-metal-tool-for-cooking-with-long-heat-resistant-handle-suitable-for-3d-realistic-mockup-vector.jpg" alt="Much-needed spatula" title="Much-needed spatula">
+		</p>
+		<p>
+			Yesterday I went to the store and got some much-needed spatulas! (What better way to say I love myself than to buy myself a spatula?)
+		</p>
+		<p class="spacing"></p>
+	</div>
+	<div class="entries">
+		<h2><span class="date">04/08/08:</span> Cookie Monster Cupcakes</h2>
+		<p>
+			<img class="pictures" src="https://iambaker.net/wp-content/uploads/2015/06/cookiemonster.jpg" alt="Cookie Monster: in cupcake form!" title="Cookie Monster: in cupcake form!">
+		</p>
+		<p>
+			My favorite cartoon character is Cookie Monster, and my favorite dessert is cupcakes, so Cookie Monster cupcakes are the best of both worlds.
+		</p>
+		<p>
+			 Did you know? Cookie Monster once said, <q>Sometimes me think what is love, and then me think love is what last cookie is for. Me give up the last cookie for you.</q> I wonder if the same applies for cupcakes? (If so, I don't think I can ever love ANYONE!)
+		</p>
+		<p class="spacing"></p>
+	</div>
+
+    <!-- Journal Entry Section -->
+    <section class="section journal-section"> <!--created a new section for the journal entires that users will put in and sued the box model to be able to do this-->
+      <div class="container">
+        <div class="container-row container-row-journal">
+          <div class="container-item container-item-journal">
+            <form id="entryForm" action="">
+              <label for="entry-title" class="journal-label">Entry Date and Title</label> <!--This is the section where the user would enter the date and title for their entry-->
+              <input
+                type="text"
+                name="entry-title"
+                id="entry-title"
+                class="entry-text-title"
+                placeholder="Date (DD/MM/YY) and Title"
+              />
+              <label for="entry-url" class="journal-label">Image URL</label> <!--This is where the user would enter the image url for their entry-->
+              <input
+                type="url"
+                name="url-entry"
+                id="entry"
+                class="entry-text-url"
+                placeholder="Insert image URL here."
+              ></textarea>
+              <label for="entry" class="journal-label">Your Entry</label><!--This is where the user would enter text for their entry-->
+              <textarea
+                name="daily-entry"
+                id="entry"
+                class="entry-text-box"
+                placeholder="Say something about yourself."
+              ></textarea>
+              <button class="btn-main entry-submit-btn" type="submit">Submit</button> <!--This is the submit button-->
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journal Entry Results -->
+    <section class="section sectionEntryResults" id="entryResultsSection">
+      <div class="container">
+        <div class="container-row entryResultRow"></div>
+      </div>
+    </section>
+
+    <p> <!--This was given with the project and i kept it the same-->
+		<a href="http://validator.w3.org/check/referer">
+			<img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML">
+		</a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS">
+		</a>
+	</p>
+
+    <script src="index.js"></script> <!-- This is where i linked the javescript-->
+  </body>
+</html>
